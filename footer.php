@@ -4,6 +4,7 @@
  * Page footer pour le site Apical
 */
 ?>
+    <br>
         <footer>
             <div class="container-footer">
                 <div class="row">
@@ -25,5 +26,6 @@
                 </div>
             </div>
         </footer>
+            <?php wp_footer();?>
     </body>
 </html>
