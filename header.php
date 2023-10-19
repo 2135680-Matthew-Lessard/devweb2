@@ -22,7 +22,7 @@
         </div>
         <div class="apres">
             <div id="menuicones">
-                <a class="icone" href="index.php">
+                <a class="icone" href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="https://apical.xyz/medias/commun/Accueil-MenuSecondaire.svg" alt="Accueil" title="Accueil">
                 </a>
                 <a class="icone" href="#" class="recherche ouvrirpopuprecherche dropdown-toggle" data-target="#popuprecherche">

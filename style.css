@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway&display=swap');
+
 body {
     margin: 0px;
     background-image: url(https://apical.xyz/medias/commun/bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
     background-size: cover;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
@@ -73,7 +76,7 @@ body {
 {
     color: #585656;
     text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Raleway";
     padding: 35px 45px;
     font-weight: inherit;
     font-size: 18px;
@@ -126,6 +129,38 @@ body {
     color: black;
 }
 
+.titre_article
+{
+    border: 1px solid #ccc;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.comment
+{
+    border: 1px solid #ccc;
+    padding:10px;
+    border-radius: 5px;
+    color: #0d66c2; 
+}
+
+#comment
+{
+    padding-inline-start: 20px;
+    margin-top: 5px;
+}
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2
+{
+    margin-block-end: 0px;
+}
+
 .ligne_article
 {
     width: 1010px;
@@ -143,12 +178,12 @@ body {
     border-style: solid;
     border-color: #bebdbd;
     max-width: 1000px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px 15px 20px 20px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     background-color: #f7f7f7;
+    max-height: 1000px;
 }
 
 .ligne_pub

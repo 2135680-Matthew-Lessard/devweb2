@@ -23,11 +23,23 @@ get_header();
                 $query->the_post();
                 ?>
                     <div class="article">
-                        <hr class="ligne_article">
                             <h2 class="titre_article">
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h2>
-                        <hr class="ligne_article">
+                        <?php
+                        if (comments_open() && get_comments_number() > 0) :
+                            ?>
+                            <ul id="comment">
+                                <?php
+                                $comments = get_comments(array('post_id' => get_the_ID()));
+                                foreach ($comments as $comment) {
+                                    echo "<p class='comment'>$comment->comment_content</p>";
+                                }
+                                ?>
+                            </ul>
+                        <?php
+                        endif;
+                        ?>
                     </div>
                 <?php
             }
@@ -36,7 +48,6 @@ get_header();
             echo 'No posts found';
         }
         ?>
-
     </div>
 </div>
 <br>
