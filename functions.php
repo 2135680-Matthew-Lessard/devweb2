@@ -10,4 +10,14 @@ function enqueue_script() {
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_script');
+
+function custom_redirect_to_404() {
+    global $wp_query;
+
+    if ($wp_query->is_404) {
+        include(get_template_directory() . '/404.php');
+        exit;
+    }
+}
+add_action('template_redirect', 'redirect_to_404');
 ?>
