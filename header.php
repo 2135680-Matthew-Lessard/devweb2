@@ -25,12 +25,13 @@
                 <a class="icone" href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="https://apical.xyz/medias/commun/Accueil-MenuSecondaire.svg" alt="Accueil" title="Accueil">
                 </a>
-                <a class="icone" href="#" class="recherche ouvrirpopuprecherche dropdown-toggle" data-target="#popuprecherche">
+                <a class="icone" href="#">
                     <img src="https://apical.xyz/medias/commun/Rechercher-MenuSecondaire.svg" alt="Recherche" title="Rechercher">
                 </a>
-                <a class="icone" href="#" class="icone ouvrirpopupauthentification" data-target="#popupauthentification">
-                    <img src="https://apical.xyz/medias/commun/Login-MenuSecondaire.svg" alt="Authentification" title="Créé en lot Créé en lot">
-                </a>
+                <a class="icone" href="<?php echo esc_url(home_url('/')); ?>/wp-admin">
+                    <img src="https://apical.xyz/medias/commun/Login-MenuSecondaire.svg" alt="Authentification" title="Authentification"></a>
+                <a href="<?php echo wp_logout_url(esc_url(home_url('/')) . '/wp-admin'); ?>"></a>
+                <!--Le lien pour la connexion est pour niaiser je n'étais pas capable de faire le formulaire avec le pop up -->
             </div>
         </div>
     </div>

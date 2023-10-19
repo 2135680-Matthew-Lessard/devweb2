@@ -11,7 +11,7 @@ get_header();
             <p id="texte_404">La page que vous tentez d'accéder n'existe pas</p>
             <ul id="lien_404">
                 <li>
-                    <a class="page_404_accueil" href="index.php">Accueil</a>
+                    <a class="page_404_accueil" href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
                 </li>
             </ul>
         </div>

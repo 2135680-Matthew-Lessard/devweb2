@@ -14,8 +14,9 @@
             <div class="container-footer">
                 <div class="row">
                     <div class="col text-center">Conception et développement de la plateforme :
-                        <span class="auteur"><a href="https://christianelagace.com" target="_blank">Matthew Lessard</a></span>
+                        <span class="auteur"><a href="https://matthewlessard.com/a-propos.php">Matthew Lessard</a></span>
                     </div>
+                    <br>
                 </div>
             </div>
             <div class="container-footer">
